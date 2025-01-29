@@ -17,13 +17,14 @@ function Navbar() {
       <div className={sidebar ? "header sidebar-active" : "header"}>
         <div className="menu-btn">
           <NavLink className="nav-link link" to="/">
-            <img
-              src="/assets/logo.jpg"
+          <h1 className="text-white">B</h1>
+            {/* <img
+              // src="/assets/logo.jpg"
               width="244"
               height="258"
               alt="logo"
               loading="lazy"
-            />
+            /> */}
           </NavLink>
           <div className="toggle-btn">
               <Toggler/>
@@ -59,7 +60,8 @@ function Navbar() {
                 <span className="icon">
                   <IoMdListBox />
                 </span>
-                <span className="link">Resume</span>
+                <span className="link">Skills</span>
+                {/* Resume */}
               </NavLink>
             </li>
             <li>

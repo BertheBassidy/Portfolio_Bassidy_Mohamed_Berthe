@@ -46,7 +46,7 @@ const App = () => {
       primary: "#fff",
     },
     gradient: {
-      bgGradient: "linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%)",
+      bgGradient: "linear-gradient(to bottom right, f4ebe80%,f4ebe8 100%)",
       gradient1:"linear-gradient(135deg,  rgba(120, 204, 109, 0.4) 0%,  rgba(120, 204, 109, 0.012) 100%)",
       gradient2:"radial-gradient(ellipse at left,  #dddddd 0%,  rgba(255, 255, 255, 0) 70%)",
 

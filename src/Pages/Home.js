@@ -1,12 +1,15 @@
 import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
 import { Link, Outlet } from "react-router-dom";
+import photodeprofil from './photodeprofil.jpg'
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
   FaGithub,
+  FaWhatsapp,
+  FaMail,
   FaCloudDownloadAlt,
 } from "react-icons/fa";
 import styled from "styled-components";
@@ -19,7 +22,7 @@ const Home = () => {
           <div className="slide"></div>
           <div className="image">
             <img
-              src="/assets/profile(1).jpg"
+              src={photodeprofil}
               width="936"
               height="936"
               alt="profile"
@@ -28,7 +31,7 @@ const Home = () => {
           </div>
           <div className="title" data-aos="fade-up">
           <h1>
-          Narender Singh Bisht
+            Bassidy Mohamed Berthe
           </h1>
           </div>
           <div className="subtitle subtitle-typed">
@@ -41,14 +44,14 @@ const Home = () => {
               }}
               startDelay={2000}
               cursorColor="#78cc6d"
-              multiText={["Developer", "Digital Artist", "Student", "Learner"]}
+              multiText={["Junior Developer-web"]}
               multiTextDelay={1000}
               typeSpeed={50}
               multiTextLoop
             />
           </div>
           <div className="social">
-            <a
+            {/* <a
               className="link"
               href="https://www.facebook.com/narender.singhbisht.3538"
               rel="noreferrer"
@@ -58,21 +61,21 @@ const Home = () => {
             >
               <FaFacebook data-aos="fade-up"
               data-aos-delay="100"/>
-            </a>
+            </a> */}
             <a
               className="link"
-              href="https://www.instagram.com/artist_narender/"
+              href="https://wa.me/71876413"
               rel="noreferrer"
               target="_blank"
-              aria-label="instagram"
+              aria-label="Whatsapp"
             
             >
-              <FaInstagram   data-aos="fade-up"
+              <FaWhatsapp  data-aos="fade-up"
               data-aos-delay="200" />
             </a>
             <a
               className="link"
-              href="https://www.linkedin.com/in/narender-singh-bisht-4529051b7/"
+              href='https://www.linkedin.com/in/bassidy-m-berthe-1b9220210/'
               rel="noreferrer"
               target="_blank"
               aria-label="linkedin"
@@ -81,20 +84,10 @@ const Home = () => {
               <FaLinkedin data-aos="fade-up"
               data-aos-delay="300" />
             </a>
+            
             <a
               className="link"
-              href="https://twitter.com/Narender343872"
-              rel="noreferrer"
-              target="_blank"
-              aria-label="twitter"
-              
-            >
-              <FaTwitter data-aos="fade-up"
-              data-aos-delay="400" />
-            </a>
-            <a
-              className="link"
-              href="https://github.com/narendercoder"
+              href='https://github.com/BertheBassidy'
               rel="noreferrer"
               target="_blank"
               aria-label="github"
@@ -103,6 +96,7 @@ const Home = () => {
               <FaGithub  data-aos="fade-up"
               data-aos-delay="500" />
             </a>
+            
           </div>
           <div className="links">
             <a

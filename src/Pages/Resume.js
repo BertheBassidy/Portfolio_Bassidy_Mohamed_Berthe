@@ -11,10 +11,10 @@ function Resume() {
       <div className="card-inner" id="resume">
         <div className="card-wrap">
           <div className="content resume">
-            <div className="title" data-aos="fade-up">
+            {/* <div className="title" data-aos="fade-up">
               <span>Resume</span>
-            </div>
-            <div className="row">
+            </div> */}
+            {/* <div className="row">
               <div className="col col-6  border-line-v">
                 <div className="resume-title border-line-h" >
                   <div className="icon" data-aos="fade-up">
@@ -75,7 +75,7 @@ function Resume() {
                     ))}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="content skills">
             <div className="title">

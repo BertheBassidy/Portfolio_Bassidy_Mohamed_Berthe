@@ -68,7 +68,7 @@ function Contact() {
                
                     <div className="map">
                       <div style={{ width: "100%" }}>
-                        <iframe
+                        {/* <iframe
                           title="map"
                           width="100%"
                           height="300"
@@ -83,7 +83,7 @@ function Contact() {
                           <a href="https://www.gps.ie/farm-gps/">
                             GPS Navigation
                           </a>
-                        </iframe>
+                        </iframe> */}
                       </div>
                     </div>
                   
@@ -97,7 +97,7 @@ function Contact() {
               <div className="row">
                 <div className="col col-12 border-line-v">
                   <div className="contact_form">
-                    <form id="cform" method="post" noValidate="novalidate">
+                    <form id="cform" method="post" action={"https://getform.io/f/ayvvjrgb"} noValidate="novalidate" >
                       <div className="row">
                         <div className="col col-6">
                           <div className="group-val">

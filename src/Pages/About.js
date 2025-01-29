@@ -24,10 +24,8 @@ function About() {
               <div className="col col-6 border-line-v">
                 <div className="text-box"  data-aos="fade-up">
                   <p>
-                    <b>I'm</b>{" "} {new Date().getFullYear() <=2024 ? ` a ${new Date().getFullYear() - 2020}${new Date().getFullYear() < 4 ? "th" : "rd" } year B.tech student pursuing ` : "graduated"}
-                    Electrical and Electronics Engineering from Maharaja Agrasen Institute of Technology. I like Doing coding and making web development related projects
-                    the simple and minimalistic design and I also love learning new things and technologies. 
-                    I'm also a digital artist by passion.
+                    <b>I'm </b>{" "} {new Date().getFullYear() <=2024 ? ` a ${new Date().getFullYear() - 2020}${new Date().getFullYear() < 4 ? "th" : "rd" } year B.tech student pursuing ` : "graduated"}
+                    a curious and versatile junior web developer, able to adapt to different aspects of web development, whether it is frontend, backend, or database management. I am motivated by the idea of ​​contributing to interesting projects and gaining experience in a professional environment.
                   </p>
                 </div>
               </div>
@@ -35,20 +33,20 @@ function About() {
                 <div className="info-list"  data-aos="fade-up">
                   <ul>
                     <li>
-                      <strong>Age: </strong>
-                      {age}
+                      {/* <strong>Age: </strong> */}
+                      {/* {age} */}
                     </li>
                     <li>
-                      <strong>Birthday: </strong>22 April 2001
+                      {/* <strong>Birthday: </strong>22 April 2001 */}
                     </li>
                     <li>
-                      <strong>Hometown: </strong>Pithoragarh, Uttarakhand
+                      <strong>Hometown: </strong>Bamoko/Mali
                     </li>
                     <li>
-                      <strong>Gmail: </strong>narendersinghbisht382@gmail.com
+                      <strong>Gmail: </strong>bassidyberthe99@gmail.com
                     </li>
                     <li>
-                      <strong>Residence: </strong>Delhi, India
+                      <strong>Residence: </strong>Bacodjicoroni golf
                     </li>
                   </ul>
                 </div>
@@ -89,16 +87,16 @@ function About() {
                 <div className="hobby-list">
                   <ul>
                     <li>
-                      <strong>Digital Art</strong>
-                    </li>
-                    <li>
                       <strong>Coding</strong>
                     </li>
                     <li>
-                      <strong>Travelling</strong>
+                      <strong>Sports</strong>
                     </li>
                     <li>
                       <strong>Reading</strong>
+                    </li>
+                    <li>
+                      <strong>Travelling</strong>
                     </li>
                   </ul>
                 </div>
