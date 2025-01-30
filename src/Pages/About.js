@@ -23,7 +23,7 @@ function About() {
             <div className="row">
               <div className="col col-6 border-line-v">
                 <div className="text-box"  data-aos="fade-up">
-                  <p>
+                  <p className="pr">
                     <b>I'm </b>{" "} {new Date().getFullYear() <=2024 ? ` a ${new Date().getFullYear() - 2020}${new Date().getFullYear() < 4 ? "th" : "rd" } year B.tech student pursuing ` : "graduated"}
                     a curious and versatile junior web developer, able to adapt to different aspects of web development, whether it is frontend, backend, or database management. I am motivated by the idea of ​​contributing to interesting projects and gaining experience in a professional environment.
                   </p>
@@ -40,14 +40,19 @@ function About() {
                       {/* <strong>Birthday: </strong>22 April 2001 */}
                     </li>
                     <li>
-                      <strong>Hometown: </strong>Bamoko/Mali
+                      <strong>Hometown : </strong>Bamoko/Mali
+                    </li>
+                   
+                    <li>
+                      <strong>Phone : </strong>+223 71 87 64 13
                     </li>
                     <li>
-                      <strong>Gmail: </strong>bassidyberthe99@gmail.com
+                      <strong>Residence : </strong>Bacodjicoroni golf
                     </li>
                     <li>
-                      <strong>Residence: </strong>Bacodjicoroni golf
+                      <strong>Gmail : </strong>bassidyberthe99@gmail.com
                     </li>
+                    
                   </ul>
                 </div>
               </div>

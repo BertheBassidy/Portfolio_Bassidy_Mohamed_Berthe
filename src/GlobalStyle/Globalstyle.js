@@ -19,7 +19,9 @@ export const GlobalStyle = createGlobalStyle`
     /* -webkit-box-shadow: none; */
     background-color: transparent;
 }
-
+.pr{
+  text-align: justify;
+}npm start
 h1,
 h2,
 h3,

@@ -75,7 +75,16 @@ export const SkillSet=[
         name: "Canva",
         imgsrc: "images/canva.png"
     },
-    
+    {
+        id: "8",
+         name: "npm",
+        imgsrc: "images/npm.png"
+    },
+    {
+        id: "8",
+        name: "vscode",
+        imgsrc: "images/vscode.png"
+    },
     // {
     //     id: "8",
     //     name: "Material-ui",
@@ -136,26 +145,27 @@ export const SkillSet=[
 
 export const ProjImg = [
     {
-        id: "1",
-        name: "Ludo",
-        category: "react",
-        imgsrc: "projectImg/react/p_01.jpg",
-        // href: "https://bhagavad-gita-gyan.vercel.app/"
-    },
-    {
-        id: "2",
-        name: "NotePlus",
-        category: "react",
-        imgsrc: "projectImg/react/p_7.png",
-        // href: "https://note-plus-react.vercel.app"
-    },
-    {
         id: "3",
         name: "Portofolio",
         category: "react",
         imgsrc: "projectImg/react/p_0.jpg",
         // href: "https://react-pokemon-app1.netlify.app/"
     },
+    {
+        id: "2",
+        name: "Recup User github ",
+        category: "react",
+        imgsrc: "projectImg/react/p_7.jpg",
+        // href: "https://note-plus-react.vercel.app"
+    },
+    {
+        id: "1",
+        name: "Ludo",
+        category: "react",
+        imgsrc: "projectImg/react/p_01.png",
+        // href: "https://bhagavad-gita-gyan.vercel.app/"
+    },
+    
     // {
     //     id: "4",
     //     name: "Crypto-Tracker",

@@ -4,56 +4,72 @@ import styled from "styled-components";
 
 function Contact() {
 
-  const [userData, setUserData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    address: "",
-    message: "",
-  });
-  let name, value;
-  const postUserData = (event) => {
-    name = event.target.name;
-    value = event.target.value;
+  // const [userData, setUserData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   address: "",
+  //   message: "",
+  // });
+  // let name, value;
+  // const postUserData = (event) => {
+  //   name = event.target.name;
+  //   value = event.target.value;
 
-    setUserData({ ...userData, [name]: value });
-  };
-  // connect with firebase
-  const submitData = async (event) => {
-    event.preventDefault();
-    const { firstName, lastName, email, address, message } = userData;
-    if (firstName && lastName && email && address && message) {
-      const res = fetch("https://my-portfolio-9090c-default-rtdb.firebaseio.com/userDataRecords.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            address,
-            message,
-          }),
-        }
-      );
-      if (res) {
-        setUserData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          address: "",
-          message: "",
-        });
-        alert("Thanks, your message is sent successfully.");
-      } else {
-        alert("Please fill the data!");
-      }
-    } else {
-      alert("Please fill the data!");
-    }
-  };
+  //   setUserData({ ...userData, [name]: value });
+  // };
+  // // connect with firebase
+  // const submitData = async (event) => {
+  //   event.preventDefault();
+  //   const { firstName, lastName, email, address, message } = userData;
+  //   if (firstName && lastName && email && address && message) {
+  //     const res = fetch(
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           firstName,
+  //           lastName,
+  //           email,
+  //           address,
+  //           message,
+  //         }),
+  //       }
+  //     );
+  //     if (res) {
+  //       setUserData({
+  //         firstName: "",
+  //         lastName: "",
+  //         email: "",
+  //         address: "",
+  //         message: "",
+  //       });
+  //       alert("Thanks, your message is sent successfully.");
+  //     } else {
+  //       alert("Please fill the data!");
+  //     }
+  //   } else {
+  //     alert("Please fill the data!");
+  //   }
+  // };
+
+  const[firstName, setFirstName]= useState("")
+  const[lastName, setLastName]= useState("")
+  const[email, setEmail]= useState("")
+  const[address, setAddress]= useState("")
+  const[message, setMessage]= useState("")
+
+ const handleSubmit=(e)=>{
+           e.preventDefault();
+           setFirstName("")
+           setLastName("")
+           setEmail("")
+           setAddress("")
+           setMessage("")
+          
+  }
   return (
     <Wrapper>
       <section className="card-inner contacts" id="contacts-card">
@@ -97,7 +113,7 @@ function Contact() {
               <div className="row">
                 <div className="col col-12 border-line-v">
                   <div className="contact_form">
-                    <form id="cform" method="post" action={"https://getform.io/f/ayvvjrgb"} noValidate="novalidate" >
+                    <form id="cform" method="POST" onSubmit={handleSubmit} action="https://getform.io/f/ayvvjrgb">
                       <div className="row">
                         <div className="col col-6">
                           <div className="group-val">
@@ -105,8 +121,8 @@ function Contact() {
                               type="text"
                               name="firstName"
                               placeholder="First Name"
-                              value={userData.firstName}
-                              onChange={postUserData}
+                              value={firstName}
+                              onChange={(e)=>setFirstName(e.target.value)}
                             ></input>
                           </div>
                         </div>
@@ -116,8 +132,8 @@ function Contact() {
                               type="text"
                               name="lastName"
                               placeholder="Last Name"
-                              value={userData.lastName}
-                              onChange={postUserData}
+                              value={lastName}
+                              onChange={(e)=>setLastName(e.target.value)}
                             ></input>
                           </div>
                         </div>
@@ -127,8 +143,8 @@ function Contact() {
                               type="text"
                               name="email"
                               placeholder="Email Address"
-                              value={userData.email}
-                              onChange={postUserData}
+                              value={email}
+                              onChange={(e)=>setEmail(e.target.value)}
                             ></input>
                           </div>
                         </div>
@@ -138,8 +154,8 @@ function Contact() {
                               type="text"
                               name="address"
                               placeholder="Address"
-                              value={userData.address}
-                              onChange={postUserData}
+                              value={address}
+                              onChange={(e)=>setAddress(e.target.value)}
                             ></input>
                           </div>
                         </div>
@@ -148,14 +164,15 @@ function Contact() {
                             <textarea
                               name="message"
                               placeholder="Your Message"
-                              value={userData.message}
-                              onChange={postUserData}
+                              value={message}
+                              onChange={(e)=>setMessage(e.target.value)}
+                              
                             ></textarea>
                           </div>
                         </div>
                       </div>
                       <div className="align-left">
-                        <button className="button" onClick={submitData}>
+                        <button className="button" type="submit">
                           <span className="text">Send Message</span>
                           <span className="icon">
                             <FaTelegramPlane />
