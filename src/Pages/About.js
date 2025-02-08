@@ -40,17 +40,17 @@ function About() {
                       {/* <strong>Birthday: </strong>22 April 2001 */}
                     </li>
                     <li>
-                      <strong>Hometown : </strong>Bamoko/Mali
+                      <strong>Hometown : </strong>Bamako/Mali
                     </li>
                    
                     <li>
                       <strong>Phone : </strong>+223 71 87 64 13
                     </li>
                     <li>
-                      <strong>Residence : </strong>Bacodjicoroni golf
+                      <strong>Residence : </strong>Baco-djicoroni golf
                     </li>
                     <li>
-                      <strong>Gmail : </strong>bassidyberthe99@gmail.com
+                      <strong>Email : </strong>bassidyberthe99@gmail.com
                     </li>
                     
                   </ul>
